@@ -1,0 +1,51 @@
+/*GLOBAL*/
+
+* {
+    box-sizing: border-box;
+    border-radius: 0 !important;
+}
+
+
+/*NAVBAR*/
+
+.navbar-custom {}
+
+/*HEADER*/
+
+.header-custom {
+    padding: 0 10%;
+    margin-top: 10%;
+}
+
+.header-custom h1 {
+    font-size: 3em;
+}
+
+
+/*HOME BODY*/
+
+.decorative-bar {
+    max-width: 15%;
+    height: .5vh;
+    margin: auto;
+    margin-top: 2%;
+    background-color: orangered;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.home-content {
+    padding-top: 3%;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.button-custom {
+    background-color: orangered;
+    color: white;
+    margin-top: 3%;
+}
+
+@media ()
