@@ -1,16 +1,40 @@
+/********/
 /*GLOBAL*/
+/********/
 
 * {
     box-sizing: border-box;
     border-radius: 0 !important;
 }
 
+body {
+    padding-top: 65px;
+}
 
+#page1, #page2, #page3, #page4, #page5 {
+    height: 1000px;
+}
+
+#page2, #page3, #page4, #page5 {
+    padding-top: 80px;
+}
+
+/********/
 /*NAVBAR*/
+/********/
 
-.navbar-custom {}
+.navbar-brand-custom {
+    padding-left: 30px !important;
+}
 
+.navbar-custom li {
+    padding-right: 15px;
+}
+
+
+/********/
 /*HEADER*/
+/********/
 
 .header-custom {
     padding: 0 10%;
@@ -21,18 +45,19 @@
     font-size: 3em;
 }
 
-
+/***********/
 /*HOME BODY*/
+/**********/
 
 .decorative-bar {
     max-width: 15%;
-    height: .5vh;
+    height: .4vh;
     margin: auto;
     margin-top: 2%;
     background-color: orangered;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
 }
 
 .home-content {
@@ -46,6 +71,41 @@
     background-color: orangered;
     color: white;
     margin-top: 3%;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
 }
 
-@media ()
+
+/*******/
+/*Learn*/
+/*******/
+
+
+.learn {
+    margin-top: 300px;
+}
+
+.no-pading: 0 !important;
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery-img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.parent {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 2vh;
+}
