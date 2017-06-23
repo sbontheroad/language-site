@@ -1,22 +1,27 @@
 /********/
+
+
 /*GLOBAL*/
+
+
 /********/
 
 * {
     box-sizing: border-box;
     border-radius: 0 !important;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     padding-top: 65px;
+    font-family: 'Poppins', sans-serif;
 }
 
-#page1, #page2, #page3, #page4, #page5 {
-    height: 1000px;
-}
-
-#page2, #page3, #page4, #page5 {
-    padding-top: 80px;
+h1, h2, h3 {
+    text-transform: uppercase;
+    padding: 20px 0;
+    text-align: center;
 }
 
 /********/
@@ -25,6 +30,7 @@ body {
 
 .navbar-brand-custom {
     padding-left: 30px !important;
+    color: #fcfcfc !important;
 }
 
 .navbar-custom li {
@@ -32,22 +38,110 @@ body {
 }
 
 
+/*
+.navbar-custom li a:hover {
+    background-color: grey;
+}
+*/
+
+
+/*
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #000;  Sets the text hover color on navbar
+}
+*/
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: white;
+    /*BACKGROUND color for active*/
+    background-color: orangered;
+}
+
+.navbar-default {
+    background-color: rgb(40,40,41);
+    color: #fcfcfc;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #66CCFF;
+    /*change color of links in drop down here*/
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: silver;
+    /*Change rollover cell color here*/
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    /*Change active text color here*/
+}
+
+
+/********************************************************/
+
+
+/*Fixes Jump to Pages, so items are not under the navbar*/
+
+
+/********************************************************/
+
+.jumptarget::before {
+    content: "";
+    display: block;
+    height: 60px;
+    /* fixed header height*/
+    margin: -50px 0 0;
+    /* negative fixed header height */
+}
+
+
 /********/
+
+
 /*HEADER*/
+
+
 /********/
 
 .header-custom {
     padding: 0 10%;
-    margin-top: 10%;
+    margin-top: 8%;
+    padding-bottom: 1.5%;
 }
 
 .header-custom h1 {
     font-size: 3em;
 }
 
+
 /***********/
+
+
 /*HOME BODY*/
+
+
 /**********/
+
+.backgroundImgHome {
+    background-image: url(machu_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 20px;
+}
+
+.home-color {
+    color: #fcfcfc;
+    text-shadow: 1px 1px .5px #464947;
+}
 
 .decorative-bar {
     max-width: 15%;
@@ -61,10 +155,20 @@ body {
 }
 
 .home-content {
-    padding-top: 3%;
+    padding: 4% 0%;
     width: 60%;
     text-align: center;
     margin: auto;
+    color: white;
+}
+
+.home-content p {
+    font-size: 14px;
+    letter-spacing: 1.1px;
+}
+
+#home-h2 {
+    padding-top: 0px !important;
 }
 
 .button-custom {
@@ -77,16 +181,74 @@ body {
 }
 
 
-/*******/
-/*Learn*/
-/*******/
+/**************/
 
 
-.learn {
-    margin-top: 300px;
+/*How it Works*/
+
+
+/**************/
+
+.how h2 {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3.5px;
 }
 
-.no-pading: 0 !important;
+.how-background {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6uRT01uLtzhxFSp3Lx_VD3eAmNd4pAvEOBeC_GazfPcjk9iH0JA);
+}
+
+
+.how-trans-background {
+    width: 90%;
+    padding: 70px 15px;
+    margin: auto;
+    background: rgba(255, 255, 255, .97);
+}
+
+.header-space {
+    padding: 40px 0;
+}
+.how-top-color {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(40,40,41);
+    box-shadow: 0px 4px 3px #888888;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuWmXEfPoUgxL3zyh89eQmIfHqkm_WggRfOIQ3hDmC3xq58exTg)
+}
+
+.how-header {
+    text-align: center;
+}
+
+.how-col-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.how-it-works img {
+    max-height: 250px;
+    margin: auto;
+}
+
+.how-it-works p {
+    font-size: 1.7em;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+
+#man-computer {
+    width: 250px;
+}
+
+/*GALLERY
+.no-pading {
+    padding: 0 !important;
+}
 
 .fill {
     display: flex;
@@ -108,4 +270,154 @@ body {
     justify-content: center;
     align-items: center;
     max-height: 2vh;
+}
+
+*/
+
+.instructors h2 {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3.5px;
+}
+
+.ins-top-color {
+    width: 100%;
+    height: 10vh;
+    background-color: #404042;
+    box-shadow: 0px 4px 3px #888888;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuWmXEfPoUgxL3zyh89eQmIfHqkm_WggRfOIQ3hDmC3xq58exTg)
+}
+
+.instructor {
+    margin-bottom: 20px;
+}
+
+.row-flex {
+    background-color: antiquewhite;
+    border: 2px solid #282829;
+}
+.ins-col-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.ins-desc {
+    padding-top: 30px;
+}
+
+.ins-rate {
+    padding-top: 30px;
+}
+
+.mains {
+    display: inline-block
+}
+
+.insImg {
+    padding: 25px 0;
+}
+
+.border {
+    border: 1px solid rgb(43, 42, 42);
+}
+
+.cost {
+    padding-top: 42px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/*
+.type {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4em;
+    background: rgba(000, 000, 000, 0.3);
+    overflow-y: auto;
+    border: 1px solid rgb(43, 42, 42);
+}
+*/
+
+.about-background-pattern {
+     background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDw0NDQ0NDQ0NEA0NDQ0NDQ8NDQ0NFRIYFhURFRUYHSggGBolGxUVIT0hJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NEw8NDisZExkrLSsrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAABAgAFAwf/xAAxEAEBAQABAQUGAQ0AAAAAAAAAARHwgQIDBJGhBQYhMUFRshMWM1JTcXOCkpSx0uL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APiTMQYtGAsxBixBjjGA2GQnAGHDjAMOHGwBjYrGwE42KxsBODFY2AjGsVgwE4l6YnASFWCgkFgSCwAEAAWBixgMWYCRCBhYwGkVI0MBooYqQBhwyHAGHDhwE42KznVsBONisbARjYrGwECrTYCU4vACLBV2JoIoVRQSFAACAAIAlmAkGATBFQDDBFQDDGhgExoqQGhxorAEhw4cBOHDhBGNi8GAjBYvBYCMFWLAQldTgJqaupoIoqqKCUqooJCgAoNAEggTAYBiomKgGKgioBhjQwDFSBUAyHGnPJWA0hxpCDZzq2GNgDAsYCBV3nkKCLE2LqaCUV6JoIqaupoIoqqmglNVRQTQQAYigxBAmCKgGKiYqAqGCKgGKgioBVAqAYoRQGFoQbnq0iueogBs51UARYKrOdBQRU1dTQQmrqQRU1dTQRRVVNBNTVVNAAgADQDEEDFRKoBiomKgKiomKgKiomKgKi4iKgKikznkuAYpMVz0AznmZBOeZlBqmqooJvPJNVeeSaAqKupoIqVVNBNTVVNBNTVVNBNTVUUE0GgACAYggVRJgKiomKgKiomGAuKiIqAtURFwFRURFAuGc8kykFznmIN51YFCitoDnoK3PQUBU0igmppqaAqaamgKmmigmpqqmgAaAAIBjAQJgMAxUTCC4pEVAXDEmAuKiFQFxURLzorQXCiU6C+erJ3nVtBWi0NoNz0FbedE0GqadTaDVNNRQappqaAqaamgBSKASQDBhQLAgTAQUUwguGJhgLhiSC4qIipQVKrUHQXp1GnQXvOranW0FWtqbRoHedGtTraDCgWg2pNSDVNNTQaprUAKDU0GDMABoBikgopIFUSYCoYmEFwxMplBSpUaQXKdRKdB6a2o06C9GjW0Fa2o1tBWjRo0DotGjQOpYaDVNaigKKU0GFYAwIAUEAxDAqFJAkMCikgoypIL06jTKC9Oo06CtOp1tBWto0aCrW1LAdagaBDaLQOp1tANQwBqGFoMHX7Hux7Q7U7Panh7nak7U3ve57NyzZ8L2thvut7Rnz8Pnz+ff9x9P5gcYOx+bHj/ANh2f7jw/wB8/X+7T3X9oX4zuJfllnf+H/3Bxmdme63tC5fyEy/GX8v4fLP6j2fdL2lZs8Ns+877uLPxA4rQsALMBLMBLMBaFgYwsDQhgVGZgMEZgIZgahmBqGYAGYAKzAE9r5X91ZgfcfC/o+7/AIfd/henY+vT/DMqH69Ef8syK3259VswP//Z)
+}
+
+.about-top-color {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(64, 64, 66, 0.6);
+    box-shadow: 0px 4px 3px #888888;
+   
+}
+
+.about-content h2 {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3.5px;
+}
+
+.about-content p {
+    word-spacing: 3px;
+    letter-spacing: 1.1px;
+}
+
+.quote {
+    color: #fcfcfc;
+    font-family: 'Special Elite', cursive !important;
+    font-size: 1.6em;
+    letter-spacing: 1.4px;
+    text-align: center;
+    padding-top: 2%;
+    
+}
+.about-background {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOsA0t7Zf8zj9lMjcDPnqiEGvvx7RJ45z_yeeaUobWXoeV703b);
+}
+
+.about-content {
+    padding: 4% 0%;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.social {
+    margin-top: 40px;
+    max-width: 40px;
+}
+
+
+.footer {
+    height: 10vh;
+    background-color: #282829;
+    box-shadow: 4px 4px 3px #888888;
+    color: #fcfcfc;
+    text-shadow: 1px 1px .5px #464947;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 992px) {
+    .cost {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .insImg {
+        padding: 5px 0;
+    }
+    h3 {
+        padding: 5px 0;
+    }
+    h1 {
+        font-size: 3.3em;
+    }
+}
+
+@media (max-width: 441px) {
+    h1 {
+        font-size: 2.8em;
+    }
 }
