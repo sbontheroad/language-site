@@ -14,7 +14,7 @@ var Instructor = function (picture, name, location, language, fluency, levelsTau
 };
 
 
-var inst0001 = new Instructor ("<img class='border' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf62D_LYb7Iult8xYoFDIGCg4T6eDsXmCj1oTrhmy0fkrO_htD'/>", "Emilio Juavez", "Colombia", "Spanish", ["Beginner", "Intermediate", "Advanced"], "$12");
+var inst0001 = new Instructor ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf62D_LYb7Iult8xYoFDIGCg4T6eDsXmCj1oTrhmy0fkrO_htD", "Emilio Juavez", "Colombia", "Spanish", ["Beginner", "Intermediate", "Advanced"], "$12");
 instructors.push(inst0001);
 
 var inst0002 = new Instructor ("<img class='border' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf62D_LYb7Iult8xYoFDIGCg4T6eDsXmCj1oTrhmy0fkrO_htD'/>", "Emilio Juavez", "Colombia", "Spanish", ["Beginner", "Intermediate", "Advanced"], "$12");
