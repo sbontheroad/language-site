@@ -24,6 +24,15 @@ h1, h2, h3 {
     text-align: center;
 }
 
+.arrow {
+    text-align: center;
+}
+    
+.arrow-img {
+    max-width: 30px;
+    padding-bottom: 30px;
+}
+
 /********/
 /*NAVBAR*/
 /********/
@@ -96,7 +105,7 @@ color: #000;  Sets the text hover color on navbar
 .jumptarget::before {
     content: "";
     display: block;
-    height: 60px;
+    height: 35px;
     /* fixed header height*/
     margin: -50px 0 0;
     /* negative fixed header height */
@@ -135,7 +144,7 @@ color: #000;  Sets the text hover color on navbar
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .home-color {
@@ -201,7 +210,7 @@ color: #000;  Sets the text hover color on navbar
 
 .how-trans-background {
     width: 90%;
-    padding: 70px 15px;
+    padding: 20px 15px;
     margin: auto;
     background: rgba(255, 255, 255, .97);
 }
@@ -213,7 +222,7 @@ color: #000;  Sets the text hover color on navbar
     width: 100%;
     height: 10vh;
     background-color: rgb(40,40,41);
-    box-shadow: 0px 4px 3px #888888;
+    box-shadow: 0px 15px 8px #888888;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuWmXEfPoUgxL3zyh89eQmIfHqkm_WggRfOIQ3hDmC3xq58exTg)
 }
 
@@ -225,20 +234,28 @@ color: #000;  Sets the text hover color on navbar
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 400px;
+    justify-content: flex-start;
+    height: 200px;
 }
 
 .how-it-works img {
-    max-height: 250px;
+    max-height: 200px;
     margin: auto;
 }
 
 .how-it-works p {
+    text-align:  center;
+    padding-top: 30px;
+}
+
+.how-sub-para {
+    font-size: 1.4em;
+    margin-top: 80px;
+}
+
+.how-titled {
+    color: orangered;
     font-size: 1.7em;
-    text-align: center;
-    margin: auto;
-    padding: 30px;
 }
 
 #man-computer {
@@ -274,9 +291,19 @@ color: #000;  Sets the text hover color on navbar
 
 */
 
+/*************/
+
+
+/*INSTRUCTORS*/
+
+
+/************/
+
+
 .instructors h2 {
     font-family: 'Lato', sans-serif;
     letter-spacing: 3.5px;
+    margin-top: 50px;
 }
 
 .ins-top-color {
@@ -287,14 +314,45 @@ color: #000;  Sets the text hover color on navbar
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuWmXEfPoUgxL3zyh89eQmIfHqkm_WggRfOIQ3hDmC3xq58exTg)
 }
 
+.search {
+    width: 100%;
+    margin: auto;
+    height: 4vh;
+    margin-bottom: 40px;
+    display: inline-flex;
+}
+
+.language-select {
+    width: 40%;
+    height: 5vh;
+}
+
+.flex-col {
+    justify-content: center;
+}
+
+#language-search {
+    background-color: orangered;
+    margin-left: 5px;
+    
+}
+
+#ex2 {
+	background: orangered;
+    height: 5vh;
+}
+
 .instructor {
     margin-bottom: 20px;
 }
 
 .row-flex {
     background-color: antiquewhite;
-    border: 2px solid #282829;
-}
+    -webkit-box-shadow: 0px 2px 42px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 42px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px -10px rgba(0,0,0,0.75);
+    }
+
 .ins-col-custom {
     display: flex;
     flex-direction: column;
@@ -306,15 +364,15 @@ color: #000;  Sets the text hover color on navbar
 }
 
 .ins-desc {
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .ins-rate {
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .mains {
-    display: inline-block
+    display: inline-block;
 }
 
 .insImg {
@@ -342,6 +400,15 @@ color: #000;  Sets the text hover color on navbar
 }
 */
 
+
+/***********/
+
+
+/*ABOUT */
+
+
+/**********/
+
 .about-background-pattern {
      background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDw0NDQ0NDQ0NEA0NDQ0NDQ8NDQ0NFRIYFhURFRUYHSggGBolGxUVIT0hJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NEw8NDisZExkrLSsrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAABAgAFAwf/xAAxEAEBAQABAQUGAQ0AAAAAAAAAARHwgQIDBJGhBQYhMUFRshMWM1JTcXOCkpSx0uL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APiTMQYtGAsxBixBjjGA2GQnAGHDjAMOHGwBjYrGwE42KxsBODFY2AjGsVgwE4l6YnASFWCgkFgSCwAEAAWBixgMWYCRCBhYwGkVI0MBooYqQBhwyHAGHDhwE42KznVsBONisbARjYrGwECrTYCU4vACLBV2JoIoVRQSFAACAAIAlmAkGATBFQDDBFQDDGhgExoqQGhxorAEhw4cBOHDhBGNi8GAjBYvBYCMFWLAQldTgJqaupoIoqqKCUqooJCgAoNAEggTAYBiomKgGKgioBhjQwDFSBUAyHGnPJWA0hxpCDZzq2GNgDAsYCBV3nkKCLE2LqaCUV6JoIqaupoIoqqmglNVRQTQQAYigxBAmCKgGKiYqAqGCKgGKgioBVAqAYoRQGFoQbnq0iueogBs51UARYKrOdBQRU1dTQQmrqQRU1dTQRRVVNBNTVVNAAgADQDEEDFRKoBiomKgKiomKgKiomKgKi4iKgKikznkuAYpMVz0AznmZBOeZlBqmqooJvPJNVeeSaAqKupoIqVVNBNTVVNBNTVVNBNTVUUE0GgACAYggVRJgKiomKgKiomGAuKiIqAtURFwFRURFAuGc8kykFznmIN51YFCitoDnoK3PQUBU0igmppqaAqaamgKmmigmpqqmgAaAAIBjAQJgMAxUTCC4pEVAXDEmAuKiFQFxURLzorQXCiU6C+erJ3nVtBWi0NoNz0FbedE0GqadTaDVNNRQappqaAqaamgBSKASQDBhQLAgTAQUUwguGJhgLhiSC4qIipQVKrUHQXp1GnQXvOranW0FWtqbRoHedGtTraDCgWg2pNSDVNNTQaprUAKDU0GDMABoBikgopIFUSYCoYmEFwxMplBSpUaQXKdRKdB6a2o06C9GjW0Fa2o1tBWjRo0DotGjQOpYaDVNaigKKU0GFYAwIAUEAxDAqFJAkMCikgoypIL06jTKC9Oo06CtOp1tBWto0aCrW1LAdagaBDaLQOp1tANQwBqGFoMHX7Hux7Q7U7Panh7nak7U3ve57NyzZ8L2thvut7Rnz8Pnz+ff9x9P5gcYOx+bHj/ANh2f7jw/wB8/X+7T3X9oX4zuJfllnf+H/3Bxmdme63tC5fyEy/GX8v4fLP6j2fdL2lZs8Ns+877uLPxA4rQsALMBLMBLMBaFgYwsDQhgVGZgMEZgIZgahmBqGYAGYAKzAE9r5X91ZgfcfC/o+7/AIfd/henY+vT/DMqH69Ef8syK3259VswP//Z)
 }
@@ -351,7 +418,7 @@ color: #000;  Sets the text hover color on navbar
     height: 10vh;
     background-color: rgba(64, 64, 66, 0.6);
     box-shadow: 0px 4px 3px #888888;
-   
+    display: inline-flex;
 }
 
 .about-content h2 {
@@ -369,8 +436,8 @@ color: #000;  Sets the text hover color on navbar
     font-family: 'Special Elite', cursive !important;
     font-size: 1.6em;
     letter-spacing: 1.4px;
-    text-align: center;
-    padding-top: 2%;
+    justify-content: center;
+    margin: auto;
     
 }
 .about-background {

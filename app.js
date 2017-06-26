@@ -1,3 +1,21 @@
+//var slider = require("bootstrap-slider-basic");
+
+var Slider = require("bootstrap-slider");
+
+var mySlider = new Slider();
+
+// Without JQuery
+var slider = new Slider('#ex2', {});
+
+var mySlider = new Slider('#ex2', {});
+
+
+
+
+
+
+
+
 var instructors = [];
 
 var Instructor = function (picture, name, location, language, fluency, levelsTaught, rate) {
@@ -6,7 +24,7 @@ var Instructor = function (picture, name, location, language, fluency, levelsTau
     this.location = location;
     this.language = language;
     this.levelsTaught = levelsTaught || [];
-    this.rating: rating;
+    this.rating = rating;
     this.rate = rate;
     this.print = function() {
         console.log(this.name + ", " + this.location + ", " + this.language + ", " + this.fluency + ", " + this.levelsTaught)

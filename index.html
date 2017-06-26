@@ -12,10 +12,10 @@
 </head>
 
 <body>
-
+    <a id="page1" class="jumptarget"></a>
     <div class="backgroundImgHome">
         <div class="transparency">
-            <a id="page1" class="jumptarget"></a>
+            
             <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,6 +56,9 @@
                     <p class="text-center">Language Site can help you learn a language more quickly and thoroughly Learning a laungage one on one with a native speaking instructor is the fastest way to learn a new language. Fingerstache vaporware neutra austin edison bulb, food truck readymade literally affogato direct trade raw denim mumblecore VHS. Flexitarian letterpress leggings neutra tacos. Synth knausgaard viral blue bottle, wayfarers letterpress palo santo actually. Bespoke jean shorts skateboard heirloom raw denim, hella helvetica keytar. Banh mi synth artisan plaid swag vegan. Live-edge stumptown hell of pok pok sriracha, selvage VHS af you probably haven't heard of them tofu chambray mustache retro. Bicycle rights kinfolk pork belly microdosing four dollar toast PBR&B stumptown yuccie.</p>
                     <button type="button" class="btn btn-default button-custom" id="learn-more">learn more</button>
                 </div>
+                <div class="arrow">
+                    <img class="arrow-img" src="arrow.png" alt="down arrow">
+                </div>
             </section>
         </div>
     </div>
@@ -74,22 +77,36 @@
                         <div class="col-md-12 how-header">
                             <h2 class="header-space">How It Works</h2>
                         </div>
-                        <div class="row how-it-works">
-                            <div class="col-md-4 col-xs-12 how-col-custom">
+                        <div class="row how-it-works how-titled">
+                            <div class="col-md-4 col-xs-12 how-col-custom ">
                                 <img id="man-computer" src="LineDrawingManComputer.png" alt="man at computer">
-                                <p>Search for an instructor</p>
+                                <p>1. Search for an instructor</p>
                             </div>
                             <div class="col-md-4 col-xs-12 how-col-custom">
                                 <img id="calendar-image" src="calendar.png" alt="calendar">
-                                <p>Schedule a lesson</p>
+                                <p>2. Schedule your lesson</p>
                             </div>
                             <div class="col-md-4 col-xs-12 how-col-custom">
                                 <img id="high-five" src="highfive.png" alt="high five">
-                                <p>Rate your instructor &amp; schedule your next lesson</p>
+                                <p> 3. Rate your instructor &amp; and provide feedback</p>
+                            </div>
+                        </div>
+                        <div class="row how-it-works how-sub-para">
+                            <div class="col-md-4 col-xs-12 how-col-custom">
+                                <p>Read instructor profile, see reviews, and search by hourly rate</p>
+                            </div>
+                            <div class="col-md-4 col-xs-12 how-col-custom">
+                                <p>Your lesson will be over a skype video call at a time that is convenient for you</p>
+                            </div>
+                            <div class="col-md-4 col-xs-12 how-col-custom">
+                                <p>If you liked your instructor you can schdule another lesson, or you can try someone new</p>
                             </div>
                         </div>
                     </div>
 
+                    <div class="arrow">
+                        <img class="arrow-img" src="arrow.png" alt="down arrow">
+                    </div>
                 </section>
             </div>
         </div>
@@ -104,18 +121,16 @@
                     <h2>Instructors</h2>
                 </div>
             </div>
-            <div class="row instructor row-flex">
-                <div class="col-md-3 col-md-offset-1 ins-col-custom"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf62D_LYb7Iult8xYoFDIGCg4T6eDsXmCj1oTrhmy0fkrO_htD" alt="spanish instructor">
+            <div class="row search">
+                <div class="col-md-6 flex-col">
+                    <select class="language-select">
+                        <option value="spanish">Spanish</option>
+                        <option value="english">English</option>
+                    </select>
+                    <button type=submit id="language-search" class="btn btn-primary">Search</button>
                 </div>
-                <div class="col-md-5 ins-col-custom">
-                    <p class="name">Name</p>
-                    <p class="location">Location</p>
-                    <p class="language">Language</p>
-                    <p class="levels">Levels Taught: </p>
-                </div>
-                <div class="col-md-3 ins-col-custom">
-                    <p class="rating">rating</p>
-                    <p class="rate">rate</p>
+                <div class="col-md-6">         
+                    <b>$ 1</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> <b>$ 100</b>
                 </div>
             </div>
             <div class="row instructor row-flex">
@@ -160,7 +175,24 @@
                     <p class="rate">rate</p>
                 </div>
             </div>
-
+            <div class="row instructor row-flex">
+                <div class="col-md-3 col-md-offset-1 ins-col-custom"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf62D_LYb7Iult8xYoFDIGCg4T6eDsXmCj1oTrhmy0fkrO_htD" alt="spanish instructor">
+                </div>
+                <div class="col-md-5 ins-col-custom">
+                    <p class="name">Name</p>
+                    <p class="location">Location</p>
+                    <p class="language">Language</p>
+                    <p class="levels">Levels Taught: </p>
+                </div>
+                <div class="col-md-3 ins-col-custom">
+                    <p class="rating">rating</p>
+                    <p class="rate">rate</p>
+                </div>
+            </div>
+            
+             <div class="arrow">
+                 <img class="arrow-img" src="arrow.png" alt="down arrow">
+            </div>
         </section>
     </div>
     <div class="about-background-pattern">
@@ -179,8 +211,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <p>Kombucha scenester franzen, enamel pin street art vaporware paleo pinterest flexitarian meh offal. Taiyaki echo park portland lumbersexual normcore drinking vinegar. Adaptogen hot chicken raclette, iPhone ethical tacos af sustainable. Paleo tumblr YOLO, skateboard selvage tattooed wayfarers selfies. Truffaut chillwave craft beer celiac. Before they sold out artisan glossier, +1 leggings cliche tofu waistcoat fam readymade single-origin coffee vegan pour-over chia photo booth. Poutine bespoke organic fingerstache, palo santo pug intelligentsia adaptogen put a bird on it flannel try-hard heirloom beard whatever. +1 cold-pressed church-key glossier disrupt chambray lumbersexual unicorn tote bag jean shorts street art banh mi snackwave. Listicle +1 mustache, fanny pack wolf brooklyn gentrify lumbersexual pug banjo dreamcatcher letterpress fingerstache selfies.</p>
+                        <div class="col-md-12 text-justify">
+                            <p>Kombucha scenester franzen, enamel pin street art vaporware paleo pinterest flexitarian meh offal. Taiyaki echo park portland lumbersexual normcore drinking vinegar. Adaptogen hot chicken raclette, iPhone ethical tacos af sustainable. Paleo tumblr YOLO, skateboard selvage tattooed wayfarers selfies. Truffaut chillwave craft beer celiac. Before they sold out artisan glossier, +1 leggings cliche tofu waistcoat fam readymade single-origin coffee vegan pour-over chia photo booth. Poutine bespoke organic fingerstache, palo santo pug intelligentsia adaptogen put a bird on it flannel try-hard heirloom beard whatever. +1 cold-pressed church-key glossier disrupt chambray lumbersexual unicorn tote bag jean shorts street art banh mi snackwave. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-justify">
+                            <p>Kombucha scenester franzen, enamel pin street art vaporware paleo pinterest flexitarian meh offal. Taiyaki echo park portland lumbersexual normcore drinking vinegar. Adaptogen hot chicken raclette, iPhone ethical tacos af sustainable. Paleo tumblr YOLO, skateboard selvage tattooed wayfarers selfies. Truffaut chillwave craft beer celiac. Before they sold out artisan glossier, +1 leggings cliche tofu waistcoat fam readymade single-origin coffee vegan pour-over chia photo booth. Poutine bespoke organic fingerstache, palo santo pug intelligentsia adaptogen put a bird on it flannel try-hard heirloom beard whatever. +1 cold-pressed church-key glossier disrupt chambray lumbersexual unicorn tote bag jean shorts street art banh mi snackwave.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -217,8 +254,9 @@
     </div>
 
 
-
-
+    <script src="jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 
 </body>
